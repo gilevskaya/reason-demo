@@ -24,7 +24,7 @@ let make = (~greeting) => {
   let message =
     "You've clicked this "
     ++ string_of_int(state.count)
-    ++ " times(s), also test branch <3";
+    ++ " times(s), also docker.";
   <div>
     <button onClick={_event => dispatch(Click)}>
       {ReasonReact.string(message)}
