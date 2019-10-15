@@ -2,12 +2,11 @@
   "name": "zeit-reason-demo",
   "version": "0.1.0",
   "scripts": {
-    "build:old": "bsb -make-world",
+    "build:bsb": "bsb -make-world",
+    "build:webpack": "NODE_ENV=production webpack",
+    "build": "yarn build:bsb && yarn build:webpack",
     "start": "bsb -make-world -w",
-    "clean": "bsb -clean-world",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack -w",
-    "build": "NODE_ENV=production webpack",
     "server": "webpack-dev-server"
   },
   "keywords": [
